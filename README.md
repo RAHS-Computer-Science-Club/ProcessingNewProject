@@ -7,8 +7,8 @@ A simple program which makes a fullscreen processing window.  Good for starting 
   `mv ProcessingNewProject/ `__`RenamedProject`__`/`
 3. Then, cd into it:  
   `cd `__`RenamedProject`__`/`
-4. Rename the project in the code
+4. Rename the project in the code:  
   `sh rename.sh `__`RenamedProject`__`
-5. Test, to make sure it compiles:
+5. Test, to make sure it compiles:  
   `ant build`
 6. Now you're all set to make a new project in processing!
