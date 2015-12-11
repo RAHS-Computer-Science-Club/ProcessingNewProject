@@ -20,16 +20,22 @@
 	<target name="jar">
 		<mkdir dir="build/jar"/>
 		<copy file="lib/core.jar" todir="build/jar/"/>
-		<jar destfile="build/jar/program.jar" basedir="build/classes">
+		<jar destfile="build/jar/ProcessingNewProject.jar" basedir="build/classes">
 			<manifest>
-				<attribute name="Main-Class" value="ProcessingProgram.src.MainWrapper"/>
+				<attribute name="Main-Class" value="ProcessingNewProject.src.MainWrapper"/>
 				<attribute name="Class-path" value="core.jar"/>
 			</manifest>
 		</jar>
 	</target>
 
 	<target name="run">
-		<java jar="build/jar/program.jar" fork="true"/>
+		<java jar="build/jar/ProcessingNewProject.jar" fork="true"/>
+	</target>
+
+	<target name="build">
+		<antcall target="compile"/>
+		<antcall target="jar"/>
+		<antcall target="run"/>
 	</target>
 
 </project>

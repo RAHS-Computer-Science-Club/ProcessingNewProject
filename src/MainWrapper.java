@@ -1,4 +1,4 @@
-package ProcessingProgram.src;
+package ProcessingNewProject.src;
 
 import processing.core.*;
 
