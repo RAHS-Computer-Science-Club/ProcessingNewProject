@@ -1,5 +1,3 @@
-#!/bin/sh
-
 ARGS=("$@")
 PROJECT_NAME=${ARGS[0]}
 if [ -z "$PROJECT_NAME" ]; then
